@@ -5,7 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>Document</title>
+    <title>Weather</title>
+    <script
+      src="https://code.jquery.com/jquery-3.6.3.js"
+      integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="
+      crossorigin="anonymous"
+    ></script>
+    <script src="http://openweathermap.org/img/wn/10d@2x.pngapp.js"></script>
   </head>
   <body>
     <div class="container">
@@ -13,20 +19,7 @@
         <div class="date-contiainer">
           <div class="time" id="time">12:30 <span id="am-pm">PM</span></div>
           <div class="date" id="date">Monday, 24 May</div>
-          <div class="others" id="current-weather-items">
-            <div class="weather-item">
-              <div>Humidity</div>
-              <div>95.%</div>
-            </div>
-            <div class="weather-item">
-              <div>Pressure</div>
-              <div>121</div>
-            </div>
-            <div class="weather-item">
-              <div>Wind Speed</div>
-              <div>95.%</div>
-            </div>
-          </div>
+          <div class="others" id="current-weather-items"></div>
         </div>
 
         <div class="place-container">
@@ -104,6 +97,12 @@
       </div>
     </div>
 
-    <script src="http://openweathermap.org/img/wn/10d@2x.pngapp.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment-with-locales.min.js"
+      integrity="sha512-42PE0rd+wZ2hNXftlM78BSehIGzezNeQuzihiBCvUEB3CVxHvsShF86wBWwQORNxNINlBPuq7rG4WWhNiTVHFg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="app.js"></script>
   </body>
 </html>
